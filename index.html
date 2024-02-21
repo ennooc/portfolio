@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UFT-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portafolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9c3d833aab.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="ENOC/enoc.png" class="enoc">
+                <ul id="sidemenu">
+                    <li><a href="# header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>                    
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>SRE | DevOps</p>
+                <h1>Hi, i'm <span> Enoc Aguilar</span><br>from Mexico</h1>
+            </div>
+        </div>
+    </div>
+    <!---------------about------------ --->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="ENOC/linkedin_1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p style="text-align: justify;">I am a recently graduated student of Electronic Engineering, I am
+                        looking for a job where I can
+                        develop my skills in I am looking for a job where I can develop my skills with technology based
+                        on working in the cloud. in working in the cloud, in the same way to be part of a work team
+                        teamwork since I am good at interacting with others and being able to achieve the I have been
+                        working on the Azure platform lately as a personal project and I want to improve my cloud
+                        skills. and I want to improve my project management skills using my knowledge in the same way I
+                        am in the best disposition to acquire new knowledge. I am also willing to acquire new knowledge
+                        and skills.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('proyects')">Proyects</p>
+                        <p class="tab-links" onclick="opentab('education')">Education </p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Azure DevOps</span><br>Docker</li>
+                            <li><span>Microsft Azure</span><br>Web App</li>
+                            <li><span>VS Code</span><br>HTML</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="proyects">
+                        <ul>
+                            <li><span>08/2018 - 12/2018</span><br>Alarm using arduino and ultrasonic sensor</li>
+                            <li><span>01/2022 - 02/2022</span><br>Application development using Flutter</li>
+                            <li><span>08/2022 - 12/2022</span><br>Deploying cloud applications with AppServices and CD/CD Git</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>08/2018 - 12/2022</span><br>Electronic engineering at Instituto Tecnológico de
+                                Tuxtla Gutiérrez, Chiapas</li>
+                            <li><span>02/2023 - 06/2023</span><br>DevOps and cloud with azaure DevOps, app services and
+                                git with Udemy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------services-------------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-cloud"></i>
+                    <h2>Azure DevOps</h2>
+                    <p>Implementation and management of Azure infrastructure.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-brands fa-git-alt"></i>
+                    <h2>YAML</h2>
+                    <p>Key features for version control and collaboration in software development.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-rocket"></i>
+                    <h2>Pipeline</h2>
+                    <p>Tool allows you to create and manage automated build and release pipelines for your software
+                        projects.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------portfolio-------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="ENOC/work_2.jpg">
+                    <div class="layer">
+                        <h3>Azure DevOps</h3>
+                        <p style="text-align: justify;">Azure DevOps is a comprehensive software development lifecycle
+                            management and collaboration platform that offers a wide range of tools and services. </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="ENOC/work_3.jpg">
+                    <div class="layer">
+                        <h3>JAVA/HTML</h3>
+                        <p style="text-align: justify;">Working with Java and HTML provides development of desktop
+                            applications, web applications, mobile applications and database management systems. </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+<!--------------------contact------------->
+
+<!--  <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>enoap@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+52 961 238 8936</p>
+                <div class="social-icons">
+                    <a href="https://instagram.com/ennooc?igshid=ZDc4ODBmNjlmNQ=="><i class="fa-brands fa-instagram"></i></i></a>
+                    <a href="https://www.linkedin.com/in/enoc-aguilar-p%C3%A9rez-b34365222/"><i class="fa-brands fa-linkedin"></i></i></a>                
+                </div>
+                <a href="ENOC/CV_Enoc-Aguilar-Pérez.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="You Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span> -->
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright Enoc. <i class="fa-solid fa-user-ninja"></i></i></p>
+    </div>
+</div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemeu = document.getElementById("sidemenu")
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxGcUiYiJPj8zOPLPPb2KTW5n0FbFW-JNTuP_39TWDtZO0Ux11Y94iuUd1vCP2y_XPs/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
